@@ -19,8 +19,8 @@ public class Pilha<T> {
 
     public T desempilha(){
         if(cheia()){
-            No tmp = topo;
-            T valor = (T)tmp.getDado();
+            No<T> tmp = topo;
+            T valor = tmp.getDado();
             topo = topo.getProx();
             idx--;
             return valor;
