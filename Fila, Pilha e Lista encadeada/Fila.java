@@ -25,9 +25,9 @@ public class Fila<T> {
 
     public T desenfileira(){
         if(cheia()){
-            No tmp = inicio;
+            No<T> tmp = inicio;
             inicio = (inicio.getProx());
-            T valor = (T)tmp.getDado();
+            T valor = tmp.getDado();
             idx--;
             return valor;
         }else{
